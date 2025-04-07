@@ -1,5 +1,5 @@
 Replace "Docker" with "Podman"
-   1 docker create ubuntu /bin/bash
+      1 docker create ubuntu /bin/bash
    2 docker images
    3 docker ps -a
    4 docker ps
@@ -10,3 +10,33 @@ Replace "Docker" with "Podman"
    9 docker ps -a
   10 docker start sample
   11 docker ps
+  12 history
+  13 docker ps
+  14 docker exec -it sample /bin/bash
+  15 docker ps
+  16 docker stop sample
+  17 docker ps
+  18 docker run -it --name example ubuntu /bin/bash
+  19 docker ps
+  20 docker ps -a
+  21 docker run -it --name example ubuntu /bin/bash
+  22 docker start example
+  23 docker ps
+  24 docker exec -it example /bin/bash
+  25 docker ps
+  26 docker run -td --name A1 -p 81:80 nginx
+  27 docker ps
+  28 docker exec -it A1 /bin/bash
+  29 docker ps
+  30 history
+  31 docker --help
+  32 docker ps
+  33 docker exec -it A1 /bin/bash
+  34 docker ps
+  35 docker stop A1
+  36 docker ps
+  37 docker start A1
+  38 docker ps
+  39 docker pause A1
+  40 docker ps
+  41 docker unpause A1
