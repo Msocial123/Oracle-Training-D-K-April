@@ -1,0 +1,12 @@
+Replace "Docker" with "Podman"
+   1 docker create ubuntu /bin/bash
+   2 docker images
+   3 docker ps -a
+   4 docker ps
+   5 docker start 295f353a4906
+   6 docker ps
+   7 docker ps -a
+   8 docker create -it --name sample ubuntu /bin/bash
+   9 docker ps -a
+  10 docker start sample
+  11 docker ps
