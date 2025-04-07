@@ -69,3 +69,7 @@ Replace "Docker" with "Podman"
   53 docker images
   54 docker exec -it --name Web1 -p 84:80 oracle-web-image:1.0
   55 docker run -it --name Web1 -p 84:80 oracle-web-image:1.0
+  59 docker tag oracle-web-image:1.0 muralisocial123/oracle-web-image:1.0
+  60 docker images
+  61 docker push muralisocial123/oracle-web-image:1.0
+  62 docker images
