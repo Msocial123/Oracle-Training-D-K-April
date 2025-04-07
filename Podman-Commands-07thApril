@@ -40,3 +40,32 @@ Replace "Docker" with "Podman"
   39 docker pause A1
   40 docker ps
   41 docker unpause A1
+
+************************************************************************
+    1  apt-get update -y
+    2  apt-get install httpd -y
+    3  apt-get install apache2 -y
+    4  which apache2
+    5  git clone -b master https://github.com/Msocial123/Coursevita-Retail-Project.git
+    6  apt-get install git -y
+    7  git clone -b master https://github.com/Msocial123/Coursevita-Retail-Project.git
+    8  ls
+    9  cd Coursevita-Retail-Project/
+   10  ls
+   11  cp -r . /var/www/html
+   12  cd /var/www/html
+   13  ls
+   14  service apache2 status
+   15  service apache2 start
+   16  service apache2 status
+
+**********************************************************
+
+ 48 docker run -td --name websever -p 83:80 ubuntu /bin/bash
+  49 docker exec -it webserver /bin/bash
+  50 docker exec -it websever /bin/bash
+  51 docker ps
+  52 docker commit websever oracle-web-image:1.0
+  53 docker images
+  54 docker exec -it --name Web1 -p 84:80 oracle-web-image:1.0
+  55 docker run -it --name Web1 -p 84:80 oracle-web-image:1.0
