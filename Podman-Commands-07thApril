@@ -42,6 +42,9 @@ Replace "Docker" with "Podman"
   41 docker unpause A1
 
 ************************************************************************
+ 48 docker run -td --name websever -p 83:80 ubuntu /bin/bash
+  49 docker exec -it webserver /bin/bash
+  50 docker exec -it websever /bin/bash
     1  apt-get update -y
     2  apt-get install httpd -y
     3  apt-get install apache2 -y
@@ -61,9 +64,7 @@ Replace "Docker" with "Podman"
 
 **********************************************************
 
- 48 docker run -td --name websever -p 83:80 ubuntu /bin/bash
-  49 docker exec -it webserver /bin/bash
-  50 docker exec -it websever /bin/bash
+
   51 docker ps
   52 docker commit websever oracle-web-image:1.0
   53 docker images
