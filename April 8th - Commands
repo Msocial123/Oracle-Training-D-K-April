@@ -1,0 +1,23 @@
+   8 docker run -td --name A1 ubuntu /bin/bash
+   9 docker exec -it A1 /bin/bash
+  10 docker rm A1
+  11 docker rm -f A1
+  12 docker ps
+  13 clear
+  14 docker run -it --name A1 -v /Data ubuntu /bin/bash
+  15 docker volume ls
+  16 docker rm A1
+  17 docker ps
+  18 docker volume ls
+  19 docker run -it --name A1 -v /Data ubuntu /bin/bash
+  20 docker volume ls
+  21 clear
+  22 docker run -it --name B1 -v mydata:/Murali ubuntu /bin/bash
+  23 docker volume ls
+  24 docker ps
+  25 docker ps -a
+  26 docker start B1
+  27 docker ps
+  28 docker ps
+  29 docker run -it --name C1 --privileged=true --volumes-from B1 ubuntu /bin/bash
+  30 docker attach B1
