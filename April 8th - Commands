@@ -21,3 +21,12 @@
   28 docker ps
   29 docker run -it --name C1 --privileged=true --volumes-from B1 ubuntu /bin/bash
   30 docker attach B1
+   32 clear
+  33 docker run -it --name D1 D:\TestDB:/Murali ubuntu /bin/bash
+  34 docker run -it --name D1 D:\TestDB:/murali ubuntu /bin/bash
+  35 docker run -it --name D1 -v D:\TestDB:/Murali ubuntu /bin/bash
+  36 docker rm D1
+  37 docker volume ls
+  38 docker run -it --name D2 -v D:\TestDB:/Murali ubuntu /bin/bash
+  39 docker rm D2
+  40 docker ps
