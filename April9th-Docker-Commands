@@ -1,0 +1,29 @@
+ 7  docker network ls
+    8  docker ps
+    9  docker run -it --name A1 ubuntu /bin/bash
+   10  docker run -it --name A1 ubuntu /bin/bash
+   11  clear
+   12  docker ps
+   13  docker inspect A1
+   14  docker run -td --name A2 ubuntu /bin/bash
+   15  docker ps
+   16  docker inspect A1
+   17  docker inspect A2
+   18  docker network ls
+   19  docker inspect network bridge
+   20  brctl show
+   21  docker ps
+   22  docker exec -it A1 /bin/bash
+   23  docker network create mynetwork --subnet=10.0.0.0/16 --gateway=10.0.10.100
+   24  docker network ls
+   25  docker run -td --net mynetwork --name B1 ubuntu /bin/bash
+   26  docker ps
+   27  docker inspect B1
+   28  docker exec -it B1 /bin/bash
+   29  docker network connect bridge B1
+   30  docker exec -it B1 /bin/bash
+   31  docker network ls
+   32  brctl show
+   33  infconfig
+   34  ifconfig
+   35  docker exec -it B1 /bin/bash
