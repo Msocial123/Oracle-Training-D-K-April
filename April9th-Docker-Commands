@@ -27,3 +27,7 @@
    33  infconfig
    34  ifconfig
    35  docker exec -it B1 /bin/bash
+    3 docker-compose up -d
+   5 docker ps
+   6 docker-compose down
+   7 docker-compose up

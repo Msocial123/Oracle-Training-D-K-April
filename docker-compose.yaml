@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  cart-service:
+    image: muralisocial123/cart-page-example:1.0
+    container_name: cart-container 
+    ports:
+      - '3001:3000'
+  web-app-service:
+    image: muralisocial123/test-web-oracle-example:1.0
+    container_name: web-app 
+    ports:
+      - "81:80"
+  transcation-Service: 
+    image: muralisocial123/bank-app-transcation:latest
+    container_name: transcation-container 
+    ports:
+      - "3002:3000"
+  organic-Service:
+    image: muralisocial123/organic-app-web:latest
+    container_name: oragic-app 
+    ports:
+      - "5656:5656"
